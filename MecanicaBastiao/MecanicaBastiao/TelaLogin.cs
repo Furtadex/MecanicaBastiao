@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace MecanicaBastiao
 {
-    public partial class Login : Form
+    public partial class TelaLogin : Form
     {
-        public Login()
+        public TelaLogin()
         {
             InitializeComponent();
         }

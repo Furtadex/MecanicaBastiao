@@ -23,5 +23,13 @@ namespace MecanicaBastiao
 
             panel1.Region = new Region(path);
         }
+
+        private void btn_EntrarA_Click(object sender, EventArgs e)
+        {
+            var TelaLogin = new TelaLogin();
+            this.Hide();
+            TelaLogin.ShowDialog();
+            this.Show();
+        }
     }
 }

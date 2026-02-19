@@ -36,8 +36,8 @@
             label7 = new Label();
             label4 = new Label();
             label3 = new Label();
-            button3 = new Button();
-            button2 = new Button();
+            btn_EntrarU = new Button();
+            btn_EntrarA = new Button();
             label2 = new Label();
             label1 = new Label();
             label5 = new Label();
@@ -67,8 +67,8 @@
             panel1.Controls.Add(label7);
             panel1.Controls.Add(label4);
             panel1.Controls.Add(label3);
-            panel1.Controls.Add(button3);
-            panel1.Controls.Add(button2);
+            panel1.Controls.Add(btn_EntrarU);
+            panel1.Controls.Add(btn_EntrarA);
             panel1.Controls.Add(label2);
             panel1.Location = new Point(390, 180);
             panel1.Name = "panel1";
@@ -114,33 +114,34 @@
             label3.Size = new Size(0, 15);
             label3.TabIndex = 6;
             // 
-            // button3
+            // btn_EntrarU
             // 
-            button3.BackColor = SystemColors.GradientInactiveCaption;
-            button3.Font = new Font("Segoe UI Semibold", 12F);
-            button3.Image = (Image)resources.GetObject("button3.Image");
-            button3.ImageAlign = ContentAlignment.MiddleLeft;
-            button3.Location = new Point(83, 85);
-            button3.Name = "button3";
-            button3.Size = new Size(254, 78);
-            button3.TabIndex = 5;
-            button3.Text = "                         Entrar como                         Usuário";
-            button3.UseVisualStyleBackColor = false;
+            btn_EntrarU.BackColor = SystemColors.GradientInactiveCaption;
+            btn_EntrarU.Font = new Font("Segoe UI Semibold", 12F);
+            btn_EntrarU.Image = (Image)resources.GetObject("btn_EntrarU.Image");
+            btn_EntrarU.ImageAlign = ContentAlignment.MiddleLeft;
+            btn_EntrarU.Location = new Point(83, 85);
+            btn_EntrarU.Name = "btn_EntrarU";
+            btn_EntrarU.Size = new Size(254, 78);
+            btn_EntrarU.TabIndex = 5;
+            btn_EntrarU.Text = "                         Entrar como                         Usuário";
+            btn_EntrarU.UseVisualStyleBackColor = false;
             // 
-            // button2
+            // btn_EntrarA
             // 
-            button2.BackColor = SystemColors.GradientInactiveCaption;
-            button2.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold);
-            button2.ForeColor = SystemColors.ControlText;
-            button2.Image = (Image)resources.GetObject("button2.Image");
-            button2.ImageAlign = ContentAlignment.MiddleLeft;
-            button2.Location = new Point(83, 190);
-            button2.Name = "button2";
-            button2.Size = new Size(254, 78);
-            button2.TabIndex = 2;
-            button2.Text = "         Entrar como            Administrador";
-            button2.TextImageRelation = TextImageRelation.ImageBeforeText;
-            button2.UseVisualStyleBackColor = false;
+            btn_EntrarA.BackColor = SystemColors.GradientInactiveCaption;
+            btn_EntrarA.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold);
+            btn_EntrarA.ForeColor = SystemColors.ControlText;
+            btn_EntrarA.Image = (Image)resources.GetObject("btn_EntrarA.Image");
+            btn_EntrarA.ImageAlign = ContentAlignment.MiddleLeft;
+            btn_EntrarA.Location = new Point(83, 190);
+            btn_EntrarA.Name = "btn_EntrarA";
+            btn_EntrarA.Size = new Size(254, 78);
+            btn_EntrarA.TabIndex = 2;
+            btn_EntrarA.Text = "         Entrar como            Administrador";
+            btn_EntrarA.TextImageRelation = TextImageRelation.ImageBeforeText;
+            btn_EntrarA.UseVisualStyleBackColor = false;
+            btn_EntrarA.Click += btn_EntrarA_Click;
             // 
             // label2
             // 
@@ -227,8 +228,8 @@
         private Panel panel1;
         private Label label1;
         private Label label2;
-        private Button button2;
-        private Button button3;
+        private Button btn_EntrarA;
+        private Button btn_EntrarU;
         private Label label4;
         private Label label3;
         private Label label5;

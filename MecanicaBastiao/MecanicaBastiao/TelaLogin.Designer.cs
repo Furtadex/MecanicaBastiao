@@ -1,6 +1,6 @@
 ﻿namespace MecanicaBastiao
 {
-    partial class Login
+    partial class TelaLogin
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TelaLogin));
             panel1 = new Panel();
             button1 = new Button();
             panel1.SuspendLayout();
