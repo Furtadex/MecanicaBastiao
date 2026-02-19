@@ -3,9 +3,9 @@ using System.Windows.Forms;
 
 namespace MecanicaBastiao
 {
-    public partial class Form1 : Form
+    public partial class PaginaAcesso : Form
     {
-        public Form1()
+        public PaginaAcesso()
         {
             InitializeComponent();
 

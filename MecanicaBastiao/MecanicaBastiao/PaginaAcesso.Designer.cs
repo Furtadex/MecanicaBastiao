@@ -1,6 +1,6 @@
 ﻿namespace MecanicaBastiao
 {
-    partial class Form1
+    partial class PaginaAcesso
     {
         /// <summary>
         ///  Required designer variable.
@@ -29,9 +29,11 @@
         private void InitializeComponent()
         {
             components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PaginaAcesso));
             pictureBox1 = new PictureBox();
             panel1 = new Panel();
+            pictureBox2 = new PictureBox();
+            label7 = new Label();
             label4 = new Label();
             label3 = new Label();
             button3 = new Button();
@@ -41,9 +43,11 @@
             label5 = new Label();
             label6 = new Label();
             imageList1 = new ImageList(components);
-            label7 = new Label();
+            pictureBox3 = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             SuspendLayout();
             // 
             // pictureBox1
@@ -59,6 +63,7 @@
             // panel1
             // 
             panel1.BackColor = SystemColors.ButtonHighlight;
+            panel1.Controls.Add(pictureBox2);
             panel1.Controls.Add(label7);
             panel1.Controls.Add(label4);
             panel1.Controls.Add(label3);
@@ -70,13 +75,32 @@
             panel1.Size = new Size(420, 390);
             panel1.TabIndex = 3;
             // 
+            // pictureBox2
+            // 
+            pictureBox2.BackgroundImage = (Image)resources.GetObject("pictureBox2.BackgroundImage");
+            pictureBox2.Location = new Point(44, 320);
+            pictureBox2.Name = "pictureBox2";
+            pictureBox2.Size = new Size(30, 21);
+            pictureBox2.TabIndex = 9;
+            pictureBox2.TabStop = false;
+            // 
+            // label7
+            // 
+            label7.AutoSize = true;
+            label7.ForeColor = SystemColors.GrayText;
+            label7.Location = new Point(44, 290);
+            label7.Name = "label7";
+            label7.Size = new Size(332, 15);
+            label7.TabIndex = 8;
+            label7.Text = "_________________________________________________________________";
+            // 
             // label4
             // 
             label4.AutoSize = true;
             label4.BackColor = SystemColors.ButtonHighlight;
             label4.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label4.ForeColor = SystemColors.GrayText;
-            label4.Location = new Point(51, 318);
+            label4.Location = new Point(69, 320);
             label4.Name = "label4";
             label4.Size = new Size(317, 21);
             label4.TabIndex = 7;
@@ -93,7 +117,6 @@
             // button3
             // 
             button3.BackColor = SystemColors.GradientInactiveCaption;
-            button3.FlatStyle = FlatStyle.Flat;
             button3.Font = new Font("Segoe UI Semibold", 12F);
             button3.Image = (Image)resources.GetObject("button3.Image");
             button3.ImageAlign = ContentAlignment.MiddleLeft;
@@ -154,7 +177,7 @@
             // 
             label6.AutoSize = true;
             label6.ForeColor = SystemColors.GrayText;
-            label6.Location = new Point(490, 626);
+            label6.Location = new Point(495, 619);
             label6.Name = "label6";
             label6.Size = new Size(220, 15);
             label6.TabIndex = 6;
@@ -166,32 +189,34 @@
             imageList1.ImageSize = new Size(16, 16);
             imageList1.TransparentColor = Color.Transparent;
             // 
-            // label7
+            // pictureBox3
             // 
-            label7.AutoSize = true;
-            label7.ForeColor = SystemColors.GrayText;
-            label7.Location = new Point(69, 290);
-            label7.Name = "label7";
-            label7.Size = new Size(282, 15);
-            label7.TabIndex = 8;
-            label7.Text = "_______________________________________________________";
+            pictureBox3.BackgroundImage = (Image)resources.GetObject("pictureBox3.BackgroundImage");
+            pictureBox3.Location = new Point(473, 614);
+            pictureBox3.Name = "pictureBox3";
+            pictureBox3.Size = new Size(23, 23);
+            pictureBox3.TabIndex = 7;
+            pictureBox3.TabStop = false;
             // 
-            // Form1
+            // PaginaAcesso
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.Control;
             ClientSize = new Size(1184, 761);
+            Controls.Add(pictureBox3);
             Controls.Add(label6);
             Controls.Add(label5);
             Controls.Add(panel1);
             Controls.Add(pictureBox1);
             Controls.Add(label1);
-            Name = "Form1";
-            Text = "Form1";
+            Name = "PaginaAcesso";
+            Text = "Página de Acesso";
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -210,5 +235,7 @@
         private Label label6;
         private ImageList imageList1;
         private Label label7;
+        private PictureBox pictureBox2;
+        private PictureBox pictureBox3;
     }
 }
