@@ -54,9 +54,9 @@
             // 
             pictureBox1.AccessibleRole = AccessibleRole.ScrollBar;
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(545, 12);
+            pictureBox1.Location = new Point(539, 0);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(110, 100);
+            pictureBox1.Size = new Size(122, 103);
             pictureBox1.TabIndex = 2;
             pictureBox1.TabStop = false;
             // 
@@ -157,11 +157,11 @@
             // 
             label1.CausesValidation = false;
             label1.Font = new Font("Sans Serif Collection", 25F, FontStyle.Bold);
-            label1.Location = new Point(450, 93);
+            label1.Location = new Point(416, 93);
             label1.Name = "label1";
-            label1.Size = new Size(300, 342);
+            label1.Size = new Size(368, 342);
             label1.TabIndex = 4;
-            label1.Text = "Oficina Bastião";
+            label1.Text = "Locadora de Filmes";
             // 
             // label5
             // 

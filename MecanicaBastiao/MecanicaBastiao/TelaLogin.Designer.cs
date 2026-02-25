@@ -29,45 +29,54 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TelaLogin));
-            panel1 = new Panel();
+            panelLogin = new Panel();
+            pictureBox4 = new PictureBox();
             linkLabel1 = new LinkLabel();
-            button3 = new Button();
-            textBox2 = new TextBox();
+            buttonEntrar = new Button();
+            textBoxSenha = new TextBox();
             pictureBox3 = new PictureBox();
-            textBox1 = new TextBox();
+            textBoxUser = new TextBox();
             pictureBox2 = new PictureBox();
             label3 = new Label();
             label2 = new Label();
             label1 = new Label();
             pictureBox1 = new PictureBox();
             button1 = new Button();
-            pictureBox4 = new PictureBox();
-            panel1.SuspendLayout();
+            panelLogin.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
             SuspendLayout();
             // 
-            // panel1
+            // panelLogin
             // 
-            panel1.BackColor = SystemColors.ButtonHighlight;
-            panel1.Controls.Add(pictureBox4);
-            panel1.Controls.Add(linkLabel1);
-            panel1.Controls.Add(button3);
-            panel1.Controls.Add(textBox2);
-            panel1.Controls.Add(pictureBox3);
-            panel1.Controls.Add(textBox1);
-            panel1.Controls.Add(pictureBox2);
-            panel1.Controls.Add(label3);
-            panel1.Controls.Add(label2);
-            panel1.Controls.Add(label1);
-            panel1.Controls.Add(pictureBox1);
-            panel1.Controls.Add(button1);
-            panel1.Location = new Point(387, 120);
-            panel1.Name = "panel1";
-            panel1.Size = new Size(447, 607);
-            panel1.TabIndex = 0;
+            panelLogin.BackColor = SystemColors.ButtonHighlight;
+            panelLogin.Controls.Add(pictureBox4);
+            panelLogin.Controls.Add(linkLabel1);
+            panelLogin.Controls.Add(buttonEntrar);
+            panelLogin.Controls.Add(textBoxSenha);
+            panelLogin.Controls.Add(pictureBox3);
+            panelLogin.Controls.Add(textBoxUser);
+            panelLogin.Controls.Add(pictureBox2);
+            panelLogin.Controls.Add(label3);
+            panelLogin.Controls.Add(label2);
+            panelLogin.Controls.Add(label1);
+            panelLogin.Controls.Add(pictureBox1);
+            panelLogin.Controls.Add(button1);
+            panelLogin.Location = new Point(387, 120);
+            panelLogin.Name = "panelLogin";
+            panelLogin.Size = new Size(447, 607);
+            panelLogin.TabIndex = 0;
+            // 
+            // pictureBox4
+            // 
+            pictureBox4.Image = (Image)resources.GetObject("pictureBox4.Image");
+            pictureBox4.Location = new Point(17, 509);
+            pictureBox4.Name = "pictureBox4";
+            pictureBox4.Size = new Size(413, 62);
+            pictureBox4.TabIndex = 12;
+            pictureBox4.TabStop = false;
             // 
             // linkLabel1
             // 
@@ -83,27 +92,28 @@
             linkLabel1.Text = "Esqueceu a senha?";
             linkLabel1.VisitedLinkColor = Color.FromArgb(255, 128, 0);
             // 
-            // button3
+            // buttonEntrar
             // 
-            button3.BackColor = Color.FromArgb(107, 33, 168);
-            button3.FlatStyle = FlatStyle.Flat;
-            button3.Font = new Font("Segoe UI Semibold", 15F, FontStyle.Bold);
-            button3.ForeColor = SystemColors.ButtonHighlight;
-            button3.Location = new Point(32, 441);
-            button3.Name = "button3";
-            button3.Size = new Size(383, 50);
-            button3.TabIndex = 10;
-            button3.Text = "Entrar";
-            button3.UseVisualStyleBackColor = false;
+            buttonEntrar.BackColor = Color.FromArgb(107, 33, 168);
+            buttonEntrar.FlatStyle = FlatStyle.Flat;
+            buttonEntrar.Font = new Font("Segoe UI Semibold", 15F, FontStyle.Bold);
+            buttonEntrar.ForeColor = SystemColors.ButtonHighlight;
+            buttonEntrar.Location = new Point(32, 441);
+            buttonEntrar.Name = "buttonEntrar";
+            buttonEntrar.Size = new Size(383, 50);
+            buttonEntrar.TabIndex = 10;
+            buttonEntrar.Text = "Entrar";
+            buttonEntrar.UseVisualStyleBackColor = false;
+            buttonEntrar.Click += buttonEntrar_Click;
             // 
-            // textBox2
+            // textBoxSenha
             // 
-            textBox2.BorderStyle = BorderStyle.FixedSingle;
-            textBox2.Location = new Point(32, 328);
-            textBox2.Multiline = true;
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(383, 50);
-            textBox2.TabIndex = 8;
+            textBoxSenha.BorderStyle = BorderStyle.FixedSingle;
+            textBoxSenha.Location = new Point(32, 328);
+            textBoxSenha.Multiline = true;
+            textBoxSenha.Name = "textBoxSenha";
+            textBoxSenha.Size = new Size(383, 50);
+            textBoxSenha.TabIndex = 8;
             // 
             // pictureBox3
             // 
@@ -114,17 +124,17 @@
             pictureBox3.TabIndex = 7;
             pictureBox3.TabStop = false;
             // 
-            // textBox1
+            // textBoxUser
             // 
-            textBox1.BorderStyle = BorderStyle.FixedSingle;
-            textBox1.Font = new Font("Segoe UI", 14F);
-            textBox1.ForeColor = Color.Black;
-            textBox1.Location = new Point(32, 227);
-            textBox1.Multiline = true;
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(383, 50);
-            textBox1.TabIndex = 6;
-            textBox1.TextAlign = HorizontalAlignment.Center;
+            textBoxUser.BorderStyle = BorderStyle.FixedSingle;
+            textBoxUser.Font = new Font("Segoe UI", 14F);
+            textBoxUser.ForeColor = Color.Black;
+            textBoxUser.Location = new Point(32, 227);
+            textBoxUser.Multiline = true;
+            textBoxUser.Name = "textBoxUser";
+            textBoxUser.Size = new Size(383, 50);
+            textBoxUser.TabIndex = 6;
+            textBoxUser.TextAlign = HorizontalAlignment.Center;
             // 
             // pictureBox2
             // 
@@ -142,9 +152,9 @@
             label3.ForeColor = SystemColors.GrayText;
             label3.Location = new Point(85, 155);
             label3.Name = "label3";
-            label3.Size = new Size(277, 21);
+            label3.Size = new Size(276, 21);
             label3.TabIndex = 4;
-            label3.Text = "Acesso o painel de gestão da Locadora";
+            label3.Text = "Acesse o painel de gestão da Locadora";
             // 
             // label2
             // 
@@ -177,6 +187,8 @@
             // 
             // button1
             // 
+            button1.FlatAppearance.BorderSize = 0;
+            button1.FlatStyle = FlatStyle.Flat;
             button1.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold);
             button1.ForeColor = Color.Black;
             button1.Image = (Image)resources.GetObject("button1.Image");
@@ -188,35 +200,26 @@
             button1.Text = "     Voltar";
             button1.UseVisualStyleBackColor = true;
             // 
-            // pictureBox4
-            // 
-            pictureBox4.Image = (Image)resources.GetObject("pictureBox4.Image");
-            pictureBox4.Location = new Point(17, 509);
-            pictureBox4.Name = "pictureBox4";
-            pictureBox4.Size = new Size(413, 62);
-            pictureBox4.TabIndex = 12;
-            pictureBox4.TabStop = false;
-            // 
             // TelaLogin
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1184, 761);
-            Controls.Add(panel1);
+            Controls.Add(panelLogin);
             Name = "TelaLogin";
             Text = "Login";
-            panel1.ResumeLayout(false);
-            panel1.PerformLayout();
+            panelLogin.ResumeLayout(false);
+            panelLogin.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
             ResumeLayout(false);
         }
 
         #endregion
 
-        private Panel panel1;
+        private Panel panelLogin;
         private Button button1;
         private Label label1;
         private PictureBox pictureBox1;
@@ -229,5 +232,8 @@
         private Button button3;
         private LinkLabel linkLabel1;
         private PictureBox pictureBox4;
+        private Button buttonEntrar;
+        private TextBox textBoxSenha;
+        private TextBox textBoxUser;
     }
 }
