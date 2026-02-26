@@ -126,6 +126,7 @@
             btn_EntrarU.TabIndex = 5;
             btn_EntrarU.Text = "                         Entrar como                         Usuário";
             btn_EntrarU.UseVisualStyleBackColor = false;
+            btn_EntrarU.Click += btn_EntrarU_Click;
             // 
             // btn_EntrarA
             // 

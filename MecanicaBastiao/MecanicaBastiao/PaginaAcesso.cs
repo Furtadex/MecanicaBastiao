@@ -26,9 +26,17 @@ namespace MecanicaBastiao
 
         private void btn_EntrarA_Click(object sender, EventArgs e)
         {
-            var TelaLogin = new TelaLogin();
+            var TelaLoginA = new TelaLogin();
             this.Hide();
-            TelaLogin.ShowDialog();
+            TelaLoginA.ShowDialog();
+            this.Show();
+        }
+
+        private void btn_EntrarU_Click(object sender, EventArgs e)
+        {
+            var TelaLoginU = new TelaLoginUser();
+            this.Hide();
+            TelaLoginU.ShowDialog();
             this.Show();
         }
     }

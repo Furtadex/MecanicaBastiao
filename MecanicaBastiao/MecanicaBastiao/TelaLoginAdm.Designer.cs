@@ -64,7 +64,7 @@
             panelLogin.Controls.Add(label1);
             panelLogin.Controls.Add(pictureBox1);
             panelLogin.Controls.Add(button1);
-            panelLogin.Location = new Point(387, 120);
+            panelLogin.Location = new Point(12, 12);
             panelLogin.Name = "panelLogin";
             panelLogin.Size = new Size(447, 607);
             panelLogin.TabIndex = 0;
@@ -204,7 +204,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1184, 761);
+            ClientSize = new Size(472, 632);
             Controls.Add(panelLogin);
             Name = "TelaLogin";
             Text = "Login";
