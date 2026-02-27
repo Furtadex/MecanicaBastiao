@@ -135,6 +135,7 @@
             textBoxUser.Size = new Size(383, 50);
             textBoxUser.TabIndex = 6;
             textBoxUser.TextAlign = HorizontalAlignment.Center;
+            textBoxUser.TextChanged += textBoxUser_TextChanged;
             // 
             // pictureBox2
             // 

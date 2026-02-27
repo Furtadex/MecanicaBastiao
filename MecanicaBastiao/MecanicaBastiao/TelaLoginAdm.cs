@@ -18,11 +18,11 @@ namespace MecanicaBastiao
             InitializeComponent();
 
             Load += panelLoginLoad;
-                        
+
             Load += buttonEntrarLoad;
         }
 
-        private void buttonEntrarLoad (object? sender, EventArgs e)
+        private void buttonEntrarLoad(object? sender, EventArgs e)
         {
             GraphicsPath path = new GraphicsPath();
             path.AddArc(0, 0, 20, 20, 180, 90);
@@ -45,8 +45,26 @@ namespace MecanicaBastiao
 
             panelLogin.Region = new Region(path);
         }
-                
+
         private void buttonEntrar_Click(object sender, EventArgs e)
+        {
+            if (textBoxUser.Text == "admin" && textBoxSenha.Text == "admin")
+            {
+                var telaPrincipal = new TelaPrincipal(true, 0);
+                this.Hide();
+                telaPrincipal.ShowDialog();
+                this.Show();
+            }
+            else
+            {
+                MessageBox.Show("Usuário ou senha incorretos",
+                    "Erro ao realizar login",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Error);
+            }
+        }
+
+        private void textBoxUser_TextChanged(object sender, EventArgs e)
         {
 
         }
