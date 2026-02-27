@@ -90,7 +90,7 @@
             linkLabel1.Size = new Size(105, 15);
             linkLabel1.TabIndex = 11;
             linkLabel1.Text = "Esqueceu a senha?";
-            linkLabel1.VisitedLinkColor = Color.FromArgb(255, 128, 0);
+            linkLabel1.VisitedLinkColor = Color.FromArgb(106, 27, 154);
             // 
             // buttonEntrar
             // 

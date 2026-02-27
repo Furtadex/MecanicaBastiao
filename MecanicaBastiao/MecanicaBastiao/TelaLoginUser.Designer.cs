@@ -83,7 +83,7 @@
             // 
             // buttonEntrar
             // 
-            buttonEntrar.BackColor = Color.FromArgb(107, 33, 168);
+            buttonEntrar.BackColor = Color.FromArgb(240, 148, 35);
             buttonEntrar.FlatStyle = FlatStyle.Flat;
             buttonEntrar.Font = new Font("Segoe UI Semibold", 15F, FontStyle.Bold);
             buttonEntrar.ForeColor = SystemColors.ButtonHighlight;
@@ -167,7 +167,7 @@
             // pictureBox1
             // 
             pictureBox1.BackgroundImage = (Image)resources.GetObject("pictureBox1.BackgroundImage");
-            pictureBox1.Location = new Point(256, 25);
+            pictureBox1.Location = new Point(258, 25);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(47, 48);
             pictureBox1.TabIndex = 1;
