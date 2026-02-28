@@ -15,6 +15,7 @@ namespace MecanicaBastiao.Banco.Repositories
 SELECT
     id,
     nome,
+    senha,
     email,
     cpf,
     telefone,
@@ -32,6 +33,7 @@ FROM usuarios
 INSERT INTO usuarios
 (
     nome,
+    senha
     email,
     cpf,
     telefone,
@@ -40,6 +42,7 @@ INSERT INTO usuarios
 VALUES
 (
     @Nome,
+    @Senha,
     @Email,
     @Cpf,
     @Telefone,
@@ -56,6 +59,7 @@ VALUES
 UPDATE usuarios
 SET
     nome = @Nome,
+    senha = @Senha,
     email = @Email,
     cpf = @Cpf,
     telefone = @Telefone,
@@ -83,6 +87,7 @@ WHERE id = @Id
 SELECT
     id,
     nome,
+    senha,
     email,
     cpf,
     telefone,
@@ -94,5 +99,32 @@ WHERE id = @Id
 
             return usuario;
         }
+
+        public static async Task<Usuario> ObterPorEmailSenha(string email, string senha)
+        {
+            var usuario = await conexaoBanco.CriarConexao()
+                .QueryFirstOrDefaultAsync<Usuario>(
+@"
+SELECT
+    id,
+    nome,
+    senha,
+    email,
+    cpf,
+    telefone,
+    data_nascimento
+FROM usuarios
+WHERE email = @Email
+AND senha = @Senha
+",
+                new { Email = email, Senha = senha });
+
+            return usuario;
+        }
+
+
+
+
+
     }
 }

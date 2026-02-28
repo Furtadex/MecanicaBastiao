@@ -33,20 +33,8 @@ namespace MecanicaBastiao
 
             panelCatalogo.Region = new Region(path);
 
-
-            // FilmeRepository - buscar todos os filmes cadastrados
-
-            // fazer um foreach na variavel filmes, e pra cada filme, criar um novo button e preencher as informacoes
-
-            string[] filmes = { "Filme 1", "Filme 2", "Film3 3" };
-
-            foreach (string filme in filmes)
-            {
-                var button = new Button();
-                button.Text = filme;
-
-            }
         }
+
         private void panelUser_Load(object? sender, EventArgs e)
         {
             GraphicsPath path = new GraphicsPath();

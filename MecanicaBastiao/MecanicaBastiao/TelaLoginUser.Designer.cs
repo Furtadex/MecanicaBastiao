@@ -93,6 +93,7 @@
             buttonEntrar.TabIndex = 10;
             buttonEntrar.Text = "Entrar";
             buttonEntrar.UseVisualStyleBackColor = false;
+            buttonEntrar.Click += buttonEntrar_Click;
             // 
             // textBoxSenha
             // 
@@ -100,6 +101,7 @@
             textBoxSenha.Location = new Point(32, 328);
             textBoxSenha.Multiline = true;
             textBoxSenha.Name = "textBoxSenha";
+            textBoxSenha.PasswordChar = '*';
             textBoxSenha.Size = new Size(383, 50);
             textBoxSenha.TabIndex = 8;
             // 
@@ -111,6 +113,7 @@
             pictureBox3.Size = new Size(75, 22);
             pictureBox3.TabIndex = 7;
             pictureBox3.TabStop = false;
+            pictureBox3.Click += pictureBox3_Click;
             // 
             // textBoxUser
             // 
@@ -187,6 +190,7 @@
             button1.TabIndex = 0;
             button1.Text = "     Voltar";
             button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
             // 
             // TelaLoginUser
             // 

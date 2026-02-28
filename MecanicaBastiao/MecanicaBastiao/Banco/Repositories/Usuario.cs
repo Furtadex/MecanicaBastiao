@@ -14,6 +14,6 @@ namespace MecanicaBastiao.Banco.Repositories
             public string Telefone { get; set; }
             public DateTime DataNascimento { get; set; }
             public string Cpf { get; set; }
-
+        public string senha { get; internal set; }
     }
 }

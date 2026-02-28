@@ -50,9 +50,9 @@ namespace MecanicaBastiao
         {
             if (textBoxUser.Text == "admin" && textBoxSenha.Text == "admin")
             {
-                var telaPrincipal = new TelaPrincipal(true, 0);
+                var telaCatalogo = new TelaCatalogo();
                 this.Hide();
-                telaPrincipal.ShowDialog();
+                telaCatalogo.ShowDialog();
                 this.Show();
             }
             else
@@ -67,6 +67,16 @@ namespace MecanicaBastiao
         private void textBoxUser_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void textBoxSenha_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

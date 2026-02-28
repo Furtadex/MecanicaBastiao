@@ -12,7 +12,7 @@ namespace MecanicaBastiao.Banco.Configuracao
     {
         public IDbConnection CriarConexao()
         {
-            return new SqlConnection("Server=(localdb)\\MSSQLLocalDB; Database=gerenciamento_funcionarios; Trusted_Connection=True;");
+            return new SqlConnection("Server=(localdb)\\MSSQLLocalDB; Database=PLAYTV; Trusted_Connection=True;");
         }
     }
 }

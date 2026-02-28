@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MecanicaBastiao.Banco.Repositories;
 
 namespace MecanicaBastiao
 {
@@ -35,6 +36,41 @@ namespace MecanicaBastiao
         private void panelLoginU_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private async void buttonEntrar_Click(object sender, EventArgs e)
+        {
+            string email = textBoxUser.Text.Trim();
+            string senha = textBoxSenha.Text;
+
+            var usuario = await UsuariosRepository.ObterPorEmailSenha(email, senha);
+
+            if (usuario != null)
+            {
+                this.Hide();
+                TelaCatalogo tela = new TelaCatalogo();
+                tela.ShowDialog();
+                this.Close();
+            }
+            else
+            {
+                MessageBox.Show(
+                    "Usuário ou senha incorretos",
+                    "Erro ao realizar login",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Error
+                );
+            }
         }
     }
 }
