@@ -50,9 +50,9 @@ namespace MecanicaBastiao
         {
             if (textBoxUser.Text == "admin" && textBoxSenha.Text == "admin")
             {
-                var telaCatalogo = new TelaCatalogo();
+                var telaListAdm = new TelaListAdm();
                 this.Hide();
-                telaCatalogo.ShowDialog();
+                telaListAdm.ShowDialog();
                 this.Show();
             }
             else
