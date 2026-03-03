@@ -43,6 +43,11 @@ namespace MecanicaBastiao
 
         public async Task AtualizarTabela()
         {
+            if (entidadeAtual == "Itens")
+            {
+
+            }
+
             var itens = await ItensRepositories.ObterTodos();
 
             dataGridView1.DataSource = new BindingList<Itens>(itens.ToList());
@@ -56,12 +61,13 @@ namespace MecanicaBastiao
 
         private void btnUsuarios_Click(object sender, EventArgs e)
         {
-
+            entidadeAtual = "Usuario";
         }
 
-        private void btnCatalogo_Click(object sender, EventArgs e)
+        private async void btnCatalogo_Click(object sender, EventArgs e)
         {
-            
+            entidadeAtual = "Itens";
+            await AtualizarTabela();
         }
     }
 }
