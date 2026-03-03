@@ -32,12 +32,12 @@ FROM usuarios
 @"
 INSERT INTO usuarios
 (
-    nome,
-    senha
-    email,
-    cpf,
-    telefone,
-    data_nascimento
+    Nome,
+    Senha
+    Email,
+    Cpf,
+    Telefone,
+    DataNascimento
 )
 VALUES
 (

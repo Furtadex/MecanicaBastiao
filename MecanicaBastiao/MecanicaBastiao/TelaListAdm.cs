@@ -72,5 +72,75 @@ namespace MecanicaBastiao
             entidadeAtual = "Itens";
             await AtualizarTabela();
         }
+
+        private async void btnEditar_Click(object sender, EventArgs e)
+        {
+            if (dataGridView1.CurrentRow == null)
+            {
+                MessageBox.Show("Por favor, selecione um registro para editar.");
+                return;
+            }
+
+            if (entidadeAtual == "Itens")
+            {
+                var itemSelecionado = (Itens)dataGridView1.CurrentRow.DataBoundItem;
+
+                var telaEdit = new TelaCadastrarItens(itemSelecionado);
+                if (telaEdit.ShowDialog() == DialogResult.OK)
+                {
+                    await AtualizarTabela();
+                }
+            }
+            else if (entidadeAtual == "Usuario")
+            {
+                var usuarioSelecionado = (Usuario)dataGridView1.CurrentRow.DataBoundItem;
+
+                var telaEdit = new TelaCadastrarUser(this);
+                if (telaEdit.ShowDialog() == DialogResult.OK)
+                {
+                    await AtualizarTabela();
+                }
+            }
+
+        }
+
+        private async void btnExcluir_Click(object sender, EventArgs e)
+        {
+            if (dataGridView1.CurrentRow == null)
+            {
+                MessageBox.Show("Selecione um registro para excluir.", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            var confirmacao = MessageBox.Show("Tem certeza que deseja excluir este registro?",
+                                             "Confirmar Exclusão",
+                                             MessageBoxButtons.YesNo,
+                                             MessageBoxIcon.Question);
+
+            if (confirmacao == DialogResult.Yes)
+            {
+                try
+                {
+                    if (entidadeAtual == "Itens")
+                    {
+                        var item = (Itens)dataGridView1.CurrentRow.DataBoundItem;
+
+                        await ItensRepositories.Deletar(item.Id);
+                    }
+                    else if (entidadeAtual == "Usuario")
+                    {
+                        var usuario = (Usuario)dataGridView1.CurrentRow.DataBoundItem;
+                        await UsuariosRepository.Deletar(usuario.Id);
+                    }
+
+                    await AtualizarTabela();
+                    MessageBox.Show("Registro excluído com sucesso!");
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show($"Erro ao excluir: {ex.Message}", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+        }
     }
 }
