@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MecanicaBastiao.Banco.Repositories;
 
 namespace MecanicaBastiao
 {
@@ -20,7 +21,9 @@ namespace MecanicaBastiao
             Load += TelaListAdm_Load;
         }
 
-        private void TelaListAdm_Load(object? sender, EventArgs e)
+
+
+        private async void TelaListAdm_Load(object? sender, EventArgs e)
         {
             GraphicsPath path = new GraphicsPath();
             path.AddArc(0, 0, 20, 20, 180, 90);
@@ -29,7 +32,18 @@ namespace MecanicaBastiao
             path.AddArc(0, panelCatAdm.Height - 20, 20, 20, 90, 90);
             path.CloseAllFigures();
 
+
+
             panelCatAdm.Region = new Region(path);
+
+            await AtualizarTabela();
+        }
+
+        public async Task AtualizarTabela()
+        {
+            var itens = await ItensRepositories.ObterTodos();
+
+            dataGridView1.DataSource = new BindingList<Itens>(itens.ToList());
         }
     }
 }
