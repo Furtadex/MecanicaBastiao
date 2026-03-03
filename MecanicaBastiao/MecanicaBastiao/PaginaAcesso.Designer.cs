@@ -58,6 +58,7 @@
             pictureBox1.Size = new Size(300, 278);
             pictureBox1.TabIndex = 2;
             pictureBox1.TabStop = false;
+            pictureBox1.UseWaitCursor = true;
             // 
             // panel1
             // 

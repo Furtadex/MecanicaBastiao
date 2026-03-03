@@ -34,7 +34,7 @@
             button2 = new Button();
             button1 = new Button();
             label4 = new Label();
-            dataGridView1 = new DataGridView();
+            dataGridView2 = new DataGridView();
             panelUser = new Panel();
             label3 = new Label();
             label2 = new Label();
@@ -42,7 +42,7 @@
             label1 = new Label();
             textBox1 = new TextBox();
             panelCatalogo.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)dataGridView2).BeginInit();
             panelUser.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
@@ -54,7 +54,7 @@
             panelCatalogo.Controls.Add(button2);
             panelCatalogo.Controls.Add(button1);
             panelCatalogo.Controls.Add(label4);
-            panelCatalogo.Controls.Add(dataGridView1);
+            panelCatalogo.Controls.Add(dataGridView2);
             panelCatalogo.Controls.Add(panelUser);
             panelCatalogo.Controls.Add(pictureBox1);
             panelCatalogo.Controls.Add(label1);
@@ -108,7 +108,7 @@
             label4.TabIndex = 5;
             label4.Text = "Editar com código count";
             // 
-            // dataGridView1
+            // dataGridView2
             // 
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridView1.Location = new Point(21, 163);
@@ -186,7 +186,7 @@
             Text = "Form1";
             panelCatalogo.ResumeLayout(false);
             panelCatalogo.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)dataGridView2).EndInit();
             panelUser.ResumeLayout(false);
             panelUser.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
@@ -202,7 +202,7 @@
         private Panel panelUser;
         private Label label3;
         private Label label2;
-        private DataGridView dataGridView1;
+        private DataGridView dataGridView2;
         private Label label4;
         private Button button1;
         private Button button2;

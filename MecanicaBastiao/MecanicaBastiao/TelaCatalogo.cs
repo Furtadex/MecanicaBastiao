@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MecanicaBastiao.Banco.Repositories;
 
 namespace MecanicaBastiao
 {
@@ -45,6 +46,13 @@ namespace MecanicaBastiao
             path.CloseAllFigures();
 
             panelUser.Region = new Region(path);
+        }
+
+        public async Task AtualizarTabela()
+        {
+            var itens = await ItensRepositories.ObterTodos();
+
+            dataGridView2.DataSource = new BindingList<Itens>(itens.ToList());
         }
     }
 }
