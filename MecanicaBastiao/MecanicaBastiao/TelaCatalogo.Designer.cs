@@ -30,6 +30,9 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TelaCatalogo));
             panelCatalogo = new Panel();
+            button3 = new Button();
+            button2 = new Button();
+            button1 = new Button();
             label4 = new Label();
             dataGridView1 = new DataGridView();
             panelUser = new Panel();
@@ -38,9 +41,6 @@
             pictureBox1 = new PictureBox();
             label1 = new Label();
             textBox1 = new TextBox();
-            button1 = new Button();
-            button2 = new Button();
-            button3 = new Button();
             panelCatalogo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             panelUser.SuspendLayout();
@@ -59,31 +59,62 @@
             panelCatalogo.Controls.Add(pictureBox1);
             panelCatalogo.Controls.Add(label1);
             panelCatalogo.Controls.Add(textBox1);
-            panelCatalogo.Location = new Point(18, 11);
-            panelCatalogo.Margin = new Padding(3, 4, 3, 4);
+            panelCatalogo.Location = new Point(16, 8);
             panelCatalogo.Name = "panelCatalogo";
-            panelCatalogo.Size = new Size(672, 861);
+            panelCatalogo.Size = new Size(588, 646);
             panelCatalogo.TabIndex = 0;
+            // 
+            // button3
+            // 
+            button3.FlatStyle = FlatStyle.Flat;
+            button3.Image = (Image)resources.GetObject("button3.Image");
+            button3.Location = new Point(449, 593);
+            button3.Margin = new Padding(3, 2, 3, 2);
+            button3.Name = "button3";
+            button3.Size = new Size(118, 37);
+            button3.TabIndex = 8;
+            button3.UseVisualStyleBackColor = true;
+            // 
+            // button2
+            // 
+            button2.FlatStyle = FlatStyle.Flat;
+            button2.Image = (Image)resources.GetObject("button2.Image");
+            button2.Location = new Point(235, 593);
+            button2.Margin = new Padding(3, 2, 3, 2);
+            button2.Name = "button2";
+            button2.Size = new Size(118, 37);
+            button2.TabIndex = 7;
+            button2.UseVisualStyleBackColor = true;
+            // 
+            // button1
+            // 
+            button1.FlatStyle = FlatStyle.Flat;
+            button1.Image = (Image)resources.GetObject("button1.Image");
+            button1.Location = new Point(21, 593);
+            button1.Margin = new Padding(3, 2, 3, 2);
+            button1.Name = "button1";
+            button1.Size = new Size(118, 37);
+            button1.TabIndex = 6;
+            button1.UseVisualStyleBackColor = true;
             // 
             // label4
             // 
             label4.AutoSize = true;
             label4.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label4.ForeColor = SystemColors.ControlDarkDark;
-            label4.Location = new Point(85, 56);
+            label4.Location = new Point(80, 43);
             label4.Name = "label4";
-            label4.Size = new Size(176, 20);
+            label4.Size = new Size(138, 15);
             label4.TabIndex = 5;
             label4.Text = "Editar com código count";
             // 
             // dataGridView1
             // 
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(24, 217);
-            dataGridView1.Margin = new Padding(3, 4, 3, 4);
+            dataGridView1.Location = new Point(21, 163);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowHeadersWidth = 51;
-            dataGridView1.Size = new Size(624, 560);
+            dataGridView1.Size = new Size(546, 420);
             dataGridView1.TabIndex = 4;
             // 
             // panelUser
@@ -91,19 +122,18 @@
             panelUser.BackColor = SystemColors.Control;
             panelUser.Controls.Add(label3);
             panelUser.Controls.Add(label2);
-            panelUser.Location = new Point(482, 19);
-            panelUser.Margin = new Padding(3, 4, 3, 4);
+            panelUser.Location = new Point(422, 14);
             panelUser.Name = "panelUser";
-            panelUser.Size = new Size(166, 76);
+            panelUser.Size = new Size(145, 57);
             panelUser.TabIndex = 3;
             // 
             // label3
             // 
             label3.AutoSize = true;
             label3.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label3.Location = new Point(48, 39);
+            label3.Location = new Point(42, 29);
             label3.Name = "label3";
-            label3.Size = new Size(79, 23);
+            label3.Size = new Size(61, 17);
             label3.TabIndex = 1;
             label3.Text = "ALTERAR";
             // 
@@ -111,19 +141,18 @@
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label2.Location = new Point(3, 3);
+            label2.Location = new Point(3, 2);
             label2.Name = "label2";
-            label2.Size = new Size(70, 23);
+            label2.Size = new Size(55, 17);
             label2.TabIndex = 0;
             label2.Text = "Usuário";
             // 
             // pictureBox1
             // 
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(24, 19);
-            pictureBox1.Margin = new Padding(3, 4, 3, 4);
+            pictureBox1.Location = new Point(21, 14);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(55, 57);
+            pictureBox1.Size = new Size(53, 57);
             pictureBox1.TabIndex = 2;
             pictureBox1.TabStop = false;
             // 
@@ -131,9 +160,9 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI Semibold", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.Location = new Point(76, 19);
+            label1.Location = new Point(80, 14);
             label1.Name = "label1";
-            label1.Size = new Size(249, 37);
+            label1.Size = new Size(196, 30);
             label1.TabIndex = 1;
             label1.Text = "Catálogo de Filmes";
             // 
@@ -141,50 +170,18 @@
             // 
             textBox1.BorderStyle = BorderStyle.FixedSingle;
             textBox1.Font = new Font("Segoe UI", 13F);
-            textBox1.Location = new Point(24, 135);
-            textBox1.Margin = new Padding(3, 4, 3, 4);
+            textBox1.Location = new Point(21, 101);
             textBox1.Multiline = true;
             textBox1.Name = "textBox1";
-            textBox1.Size = new Size(624, 41);
+            textBox1.Size = new Size(546, 31);
             textBox1.TabIndex = 0;
-            // 
-            // button1
-            // 
-            button1.FlatStyle = FlatStyle.Flat;
-            button1.Image = (Image)resources.GetObject("button1.Image");
-            button1.Location = new Point(24, 791);
-            button1.Name = "button1";
-            button1.Size = new Size(135, 49);
-            button1.TabIndex = 6;
-            button1.UseVisualStyleBackColor = true;
-            // 
-            // button2
-            // 
-            button2.FlatStyle = FlatStyle.Flat;
-            button2.Image = (Image)resources.GetObject("button2.Image");
-            button2.Location = new Point(269, 791);
-            button2.Name = "button2";
-            button2.Size = new Size(135, 49);
-            button2.TabIndex = 7;
-            button2.UseVisualStyleBackColor = true;
-            // 
-            // button3
-            // 
-            button3.FlatStyle = FlatStyle.Flat;
-            button3.Image = (Image)resources.GetObject("button3.Image");
-            button3.Location = new Point(513, 791);
-            button3.Name = "button3";
-            button3.Size = new Size(135, 49);
-            button3.TabIndex = 8;
-            button3.UseVisualStyleBackColor = true;
             // 
             // TelaCatalogo
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(704, 899);
+            ClientSize = new Size(616, 674);
             Controls.Add(panelCatalogo);
-            Margin = new Padding(3, 4, 3, 4);
             Name = "TelaCatalogo";
             Text = "Form1";
             panelCatalogo.ResumeLayout(false);

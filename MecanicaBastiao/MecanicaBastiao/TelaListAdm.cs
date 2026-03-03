@@ -13,6 +13,8 @@ namespace MecanicaBastiao
 {
     public partial class TelaListAdm : Form
     {
+        private string entidadeAtual = "Itens";
+
         public TelaListAdm()
         {
             InitializeComponent();
@@ -30,6 +32,22 @@ namespace MecanicaBastiao
             path.CloseAllFigures();
 
             panelCatAdm.Region = new Region(path);
+        }
+
+        private void btnNovo_Click(object sender, EventArgs e)
+        {
+            var cadastrarUser = new TelaCadastrarUser(this);
+            cadastrarUser.Show();
+        }
+
+        private void btnUsuarios_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnCatalogo_Click(object sender, EventArgs e)
+        {
+            
         }
     }
 }
