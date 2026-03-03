@@ -15,5 +15,10 @@ namespace MecanicaBastiao.Banco.Repositories
             public DateTime DataNascimento { get; set; }
             public string Cpf { get; set; }
         public string senha { get; internal set; }
+
+        internal static async Task ObterTodos()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

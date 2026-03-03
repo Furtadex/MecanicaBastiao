@@ -155,7 +155,7 @@
         NftByq/5awypOIYxIuz8gpqGsY4hSNm1mW05x+N/YqAy2rHWOQAAAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="button3.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="btnEditar.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAHYAAAAlCAYAAACXvR1IAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
         vAAADrwBlbxySQAABX1JREFUeF7tmOlTU1cYh/u39Gtn+qHjTIu7ZQkmCoEgihZQqY67JgJCiKB1GWud

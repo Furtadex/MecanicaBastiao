@@ -45,12 +45,14 @@ namespace MecanicaBastiao
         {
             if (entidadeAtual == "Itens")
             {
-
+                var itens = await ItensRepositories.ObterTodos();
+                dataGridView1.DataSource = new BindingList<Itens>(itens.ToList());
             }
-
-            var itens = await ItensRepositories.ObterTodos();
-
-            dataGridView1.DataSource = new BindingList<Itens>(itens.ToList());
+            else if (entidadeAtual == "Usuario")
+            {
+                var usuarios = await UsuariosRepository.ObterTodos();
+                dataGridView1.DataSource = new BindingList<Usuario>(usuarios.ToList());
+            }
         }
 
         private void btnNovo_Click(object sender, EventArgs e)
@@ -59,9 +61,10 @@ namespace MecanicaBastiao
             cadastrarUser.Show();
         }
 
-        private void btnUsuarios_Click(object sender, EventArgs e)
+        private async void btnUsuarios_Click(object sender, EventArgs e)
         {
             entidadeAtual = "Usuario";
+            await AtualizarTabela();
         }
 
         private async void btnCatalogo_Click(object sender, EventArgs e)

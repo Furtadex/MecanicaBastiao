@@ -110,12 +110,12 @@
             // 
             // dataGridView2
             // 
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(21, 163);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.RowHeadersWidth = 51;
-            dataGridView1.Size = new Size(546, 420);
-            dataGridView1.TabIndex = 4;
+            dataGridView2.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridView2.Location = new Point(21, 163);
+            dataGridView2.Name = "dataGridView1";
+            dataGridView2.RowHeadersWidth = 51;
+            dataGridView2.Size = new Size(546, 420);
+            dataGridView2.TabIndex = 4;
             // 
             // panelUser
             // 
