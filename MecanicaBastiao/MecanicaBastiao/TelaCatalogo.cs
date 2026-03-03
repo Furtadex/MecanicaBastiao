@@ -23,7 +23,7 @@ namespace MecanicaBastiao
             Load += panelUser_Load;
         }
 
-        private void TelaCatalogo_Load(object? sender, EventArgs e)
+        private async void TelaCatalogo_Load(object? sender, EventArgs e)
         {
             GraphicsPath path = new GraphicsPath();
             path.AddArc(0, 0, 20, 20, 180, 90);
@@ -34,7 +34,10 @@ namespace MecanicaBastiao
 
             panelCatalogo.Region = new Region(path);
 
+            await AtualizarTabela();
         }
+
+
 
         private void panelUser_Load(object? sender, EventArgs e)
         {
