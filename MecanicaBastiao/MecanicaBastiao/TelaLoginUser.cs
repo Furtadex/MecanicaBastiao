@@ -51,7 +51,7 @@ namespace MecanicaBastiao
         private async void buttonEntrar_Click(object sender, EventArgs e)
         {
             string email = textBoxUser.Text.Trim();
-            string senha = textBoxSenha.Text;
+            string senha = textBoxSenhaU.Text;
 
             var usuario = await UsuariosRepository.ObterPorEmailSenha(email, senha);
 

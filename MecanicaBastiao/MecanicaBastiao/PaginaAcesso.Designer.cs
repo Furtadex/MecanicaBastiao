@@ -39,7 +39,6 @@
             btn_EntrarU = new Button();
             btn_EntrarA = new Button();
             label2 = new Label();
-            label1 = new Label();
             label5 = new Label();
             label6 = new Label();
             imageList1 = new ImageList(components);
@@ -54,9 +53,9 @@
             // 
             pictureBox1.AccessibleRole = AccessibleRole.ScrollBar;
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(539, 0);
+            pictureBox1.Location = new Point(450, -65);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(122, 103);
+            pictureBox1.Size = new Size(300, 278);
             pictureBox1.TabIndex = 2;
             pictureBox1.TabStop = false;
             pictureBox1.UseWaitCursor = true;
@@ -79,7 +78,7 @@
             // pictureBox2
             // 
             pictureBox2.BackgroundImage = (Image)resources.GetObject("pictureBox2.BackgroundImage");
-            pictureBox2.Location = new Point(46, 324);
+            pictureBox2.Location = new Point(46, 320);
             pictureBox2.Name = "pictureBox2";
             pictureBox2.Size = new Size(26, 20);
             pictureBox2.TabIndex = 9;
@@ -120,7 +119,6 @@
             btn_EntrarU.BackColor = SystemColors.GradientInactiveCaption;
             btn_EntrarU.Font = new Font("Segoe UI Semibold", 12F);
             btn_EntrarU.Image = (Image)resources.GetObject("btn_EntrarU.Image");
-            btn_EntrarU.ImageAlign = ContentAlignment.MiddleLeft;
             btn_EntrarU.Location = new Point(83, 85);
             btn_EntrarU.Name = "btn_EntrarU";
             btn_EntrarU.Size = new Size(254, 78);
@@ -130,11 +128,10 @@
             // 
             // btn_EntrarA
             // 
-            btn_EntrarA.BackColor = Color.DarkViolet;
+            btn_EntrarA.BackColor = Color.Indigo;
             btn_EntrarA.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold);
             btn_EntrarA.ForeColor = SystemColors.ControlText;
             btn_EntrarA.Image = (Image)resources.GetObject("btn_EntrarA.Image");
-            btn_EntrarA.ImageAlign = ContentAlignment.MiddleLeft;
             btn_EntrarA.Location = new Point(83, 190);
             btn_EntrarA.Name = "btn_EntrarA";
             btn_EntrarA.Size = new Size(254, 78);
@@ -152,16 +149,6 @@
             label2.Size = new Size(234, 28);
             label2.TabIndex = 0;
             label2.Text = "Escolha o tipo de acesso";
-            // 
-            // label1
-            // 
-            label1.CausesValidation = false;
-            label1.Font = new Font("Sans Serif Collection", 25F, FontStyle.Bold);
-            label1.Location = new Point(416, 93);
-            label1.Name = "label1";
-            label1.Size = new Size(399, 100);
-            label1.TabIndex = 4;
-            label1.Text = "Locadora de Filmes";
             // 
             // label5
             // 
@@ -193,9 +180,9 @@
             // pictureBox3
             // 
             pictureBox3.BackgroundImage = (Image)resources.GetObject("pictureBox3.BackgroundImage");
-            pictureBox3.Location = new Point(473, 616);
+            pictureBox3.Location = new Point(473, 613);
             pictureBox3.Name = "pictureBox3";
-            pictureBox3.Size = new Size(23, 19);
+            pictureBox3.Size = new Size(23, 23);
             pictureBox3.TabIndex = 7;
             pictureBox3.TabStop = false;
             // 
@@ -210,7 +197,6 @@
             Controls.Add(label5);
             Controls.Add(panel1);
             Controls.Add(pictureBox1);
-            Controls.Add(label1);
             Name = "PaginaAcesso";
             Text = "Página de Acesso";
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
@@ -226,7 +212,6 @@
 
         private PictureBox pictureBox1;
         private Panel panel1;
-        private Label label1;
         private Label label2;
         private Button btn_EntrarA;
         private Button btn_EntrarU;

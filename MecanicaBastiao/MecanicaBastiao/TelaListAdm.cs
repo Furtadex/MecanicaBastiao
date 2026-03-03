@@ -14,6 +14,8 @@ namespace MecanicaBastiao
 {
     public partial class TelaListAdm : Form
     {
+        private string entidadeAtual = "Itens";
+
         public TelaListAdm()
         {
             InitializeComponent();
@@ -41,9 +43,31 @@ namespace MecanicaBastiao
 
         public async Task AtualizarTabela()
         {
+            if (entidadeAtual == "Itens")
+            {
+
+            }
+
             var itens = await ItensRepositories.ObterTodos();
 
             dataGridView1.DataSource = new BindingList<Itens>(itens.ToList());
+        }
+
+        private void btnNovo_Click(object sender, EventArgs e)
+        {
+            var cadastrarUser = new TelaCadastrarUser(this);
+            cadastrarUser.Show();
+        }
+
+        private void btnUsuarios_Click(object sender, EventArgs e)
+        {
+            entidadeAtual = "Usuario";
+        }
+
+        private async void btnCatalogo_Click(object sender, EventArgs e)
+        {
+            entidadeAtual = "Itens";
+            await AtualizarTabela();
         }
     }
 }

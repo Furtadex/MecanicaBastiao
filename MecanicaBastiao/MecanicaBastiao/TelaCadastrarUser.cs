@@ -12,7 +12,7 @@ namespace MecanicaBastiao
 {
     public partial class TelaCadastrarUser : Form
     {
-        public TelaCadastrarUser()
+        public TelaCadastrarUser(TelaListAdm telaListAdm)
         {
             InitializeComponent();
         }

@@ -3,6 +3,7 @@
   "WorkspaceRootPath": "C:\\Users\\BRUNOISAACCORREASOAR\\Desktop\\MecanicaBastiao\\MecanicaBastiao\\",
   "Documents": [
     {
+<<<<<<< HEAD
       "AbsoluteMoniker": "D:0:0:{C51B3B9D-6AEC-4180-9461-5985BAB7368B}|MecanicaBastiao\\MecanicaBastiao.csproj|c:\\users\\brunoisaaccorreasoar\\desktop\\mecanicabastiao\\mecanicabastiao\\mecanicabastiao\\telacatalogo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C51B3B9D-6AEC-4180-9461-5985BAB7368B}|MecanicaBastiao\\MecanicaBastiao.csproj|solutionrelative:mecanicabastiao\\telacatalogo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -17,6 +18,34 @@
     {
       "AbsoluteMoniker": "D:0:0:{C51B3B9D-6AEC-4180-9461-5985BAB7368B}|MecanicaBastiao\\MecanicaBastiao.csproj|C:\\Users\\BRUNOISAACCORREASOAR\\Desktop\\MecanicaBastiao\\MecanicaBastiao\\mecanicabastiao\\telacatalogo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{C51B3B9D-6AEC-4180-9461-5985BAB7368B}|MecanicaBastiao\\MecanicaBastiao.csproj|solutionrelative:mecanicabastiao\\telacatalogo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+=======
+      "AbsoluteMoniker": "D:0:0:{C51B3B9D-6AEC-4180-9461-5985BAB7368B}|MecanicaBastiao\\MecanicaBastiao.csproj|c:\\users\\guilhermealexandrefu\\desktop\\mecanicabastiao\\mecanicabastiao\\mecanicabastiao\\telalistadm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{C51B3B9D-6AEC-4180-9461-5985BAB7368B}|MecanicaBastiao\\MecanicaBastiao.csproj|solutionrelative:mecanicabastiao\\telalistadm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C51B3B9D-6AEC-4180-9461-5985BAB7368B}|MecanicaBastiao\\MecanicaBastiao.csproj|c:\\users\\guilhermealexandrefu\\desktop\\mecanicabastiao\\mecanicabastiao\\mecanicabastiao\\paginaacesso.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{C51B3B9D-6AEC-4180-9461-5985BAB7368B}|MecanicaBastiao\\MecanicaBastiao.csproj|solutionrelative:mecanicabastiao\\paginaacesso.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C51B3B9D-6AEC-4180-9461-5985BAB7368B}|MecanicaBastiao\\MecanicaBastiao.csproj|c:\\users\\guilhermealexandrefu\\desktop\\mecanicabastiao\\mecanicabastiao\\mecanicabastiao\\telacadastraritens.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{C51B3B9D-6AEC-4180-9461-5985BAB7368B}|MecanicaBastiao\\MecanicaBastiao.csproj|solutionrelative:mecanicabastiao\\telacadastraritens.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C51B3B9D-6AEC-4180-9461-5985BAB7368B}|MecanicaBastiao\\MecanicaBastiao.csproj|c:\\users\\guilhermealexandrefu\\desktop\\mecanicabastiao\\mecanicabastiao\\mecanicabastiao\\telacatalogo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{C51B3B9D-6AEC-4180-9461-5985BAB7368B}|MecanicaBastiao\\MecanicaBastiao.csproj|solutionrelative:mecanicabastiao\\telacatalogo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C51B3B9D-6AEC-4180-9461-5985BAB7368B}|MecanicaBastiao\\MecanicaBastiao.csproj|c:\\users\\guilhermealexandrefu\\desktop\\mecanicabastiao\\mecanicabastiao\\mecanicabastiao\\telaloginuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{C51B3B9D-6AEC-4180-9461-5985BAB7368B}|MecanicaBastiao\\MecanicaBastiao.csproj|solutionrelative:mecanicabastiao\\telaloginuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C51B3B9D-6AEC-4180-9461-5985BAB7368B}|MecanicaBastiao\\MecanicaBastiao.csproj|c:\\users\\guilhermealexandrefu\\desktop\\mecanicabastiao\\mecanicabastiao\\mecanicabastiao\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C51B3B9D-6AEC-4180-9461-5985BAB7368B}|MecanicaBastiao\\MecanicaBastiao.csproj|solutionrelative:mecanicabastiao\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C51B3B9D-6AEC-4180-9461-5985BAB7368B}|MecanicaBastiao\\MecanicaBastiao.csproj|c:\\users\\guilhermealexandrefu\\desktop\\mecanicabastiao\\mecanicabastiao\\mecanicabastiao\\telacatalogo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C51B3B9D-6AEC-4180-9461-5985BAB7368B}|MecanicaBastiao\\MecanicaBastiao.csproj|solutionrelative:mecanicabastiao\\telacatalogo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+>>>>>>> 2ff10cd4f46df6912d84c5d9341c9653d78e4d92
     }
   ],
   "DocumentGroupContainers": [
@@ -26,23 +55,73 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
+<<<<<<< HEAD
           "SelectedChildIndex": 2,
+=======
+          "SelectedChildIndex": 1,
+>>>>>>> 2ff10cd4f46df6912d84c5d9341c9653d78e4d92
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 1,
+<<<<<<< HEAD
               "Title": "ItensRepositories.cs",
               "DocumentMoniker": "C:\\Users\\BRUNOISAACCORREASOAR\\Desktop\\MecanicaBastiao\\MecanicaBastiao\\MecanicaBastiao\\Banco\\Repositories\\ItensRepositories.cs",
               "RelativeDocumentMoniker": "MecanicaBastiao\\Banco\\Repositories\\ItensRepositories.cs",
               "ToolTip": "C:\\Users\\BRUNOISAACCORREASOAR\\Desktop\\MecanicaBastiao\\MecanicaBastiao\\MecanicaBastiao\\Banco\\Repositories\\ItensRepositories.cs",
               "RelativeToolTip": "MecanicaBastiao\\Banco\\Repositories\\ItensRepositories.cs",
               "ViewState": "AgIAAAUAAAAAAAAAAAAxwAAAAAAAAAAAAAAAAA==",
+=======
+              "Title": "PaginaAcesso.cs [Projeto]",
+              "DocumentMoniker": "C:\\Users\\GUILHERMEALEXANDREFU\\Desktop\\MecanicaBastiao\\MecanicaBastiao\\MecanicaBastiao\\PaginaAcesso.cs",
+              "RelativeDocumentMoniker": "MecanicaBastiao\\PaginaAcesso.cs",
+              "ToolTip": "C:\\Users\\GUILHERMEALEXANDREFU\\Desktop\\MecanicaBastiao\\MecanicaBastiao\\MecanicaBastiao\\PaginaAcesso.cs [Projeto]",
+              "RelativeToolTip": "MecanicaBastiao\\PaginaAcesso.cs [Projeto]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-27T00:43:03.239Z",
+              "EditorCaption": " [Projeto]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "TelaListAdm.cs [Projeto]",
+              "DocumentMoniker": "C:\\Users\\GUILHERMEALEXANDREFU\\Desktop\\MecanicaBastiao\\MecanicaBastiao\\MecanicaBastiao\\TelaListAdm.cs",
+              "RelativeDocumentMoniker": "MecanicaBastiao\\TelaListAdm.cs",
+              "ToolTip": "C:\\Users\\GUILHERMEALEXANDREFU\\Desktop\\MecanicaBastiao\\MecanicaBastiao\\MecanicaBastiao\\TelaListAdm.cs [Projeto]",
+              "RelativeToolTip": "MecanicaBastiao\\TelaListAdm.cs [Projeto]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-27T00:32:11.847Z",
+              "EditorCaption": " [Projeto]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "TelaCadastrarItens.cs [Projeto]",
+              "DocumentMoniker": "C:\\Users\\GUILHERMEALEXANDREFU\\Desktop\\MecanicaBastiao\\MecanicaBastiao\\MecanicaBastiao\\TelaCadastrarItens.cs",
+              "RelativeDocumentMoniker": "MecanicaBastiao\\TelaCadastrarItens.cs",
+              "ToolTip": "C:\\Users\\GUILHERMEALEXANDREFU\\Desktop\\MecanicaBastiao\\MecanicaBastiao\\MecanicaBastiao\\TelaCadastrarItens.cs [Projeto]",
+              "RelativeToolTip": "MecanicaBastiao\\TelaCadastrarItens.cs [Projeto]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-26T23:38:59.095Z",
+              "EditorCaption": " [Projeto]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\GUILHERMEALEXANDREFU\\Desktop\\MecanicaBastiao\\MecanicaBastiao\\MecanicaBastiao\\Program.cs",
+              "RelativeDocumentMoniker": "MecanicaBastiao\\Program.cs",
+              "ToolTip": "C:\\Users\\GUILHERMEALEXANDREFU\\Desktop\\MecanicaBastiao\\MecanicaBastiao\\MecanicaBastiao\\Program.cs",
+              "RelativeToolTip": "MecanicaBastiao\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAABAAAAAAAAAA==",
+>>>>>>> 2ff10cd4f46df6912d84c5d9341c9653d78e4d92
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-03-03T00:26:21.525Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
+<<<<<<< HEAD
               "DocumentIndex": 2,
               "Title": "TelaListAdm.cs",
               "DocumentMoniker": "C:\\Users\\BRUNOISAACCORREASOAR\\Desktop\\MecanicaBastiao\\MecanicaBastiao\\MecanicaBastiao\\TelaListAdm.cs",
@@ -50,12 +129,22 @@
               "ToolTip": "C:\\Users\\BRUNOISAACCORREASOAR\\Desktop\\MecanicaBastiao\\MecanicaBastiao\\MecanicaBastiao\\TelaListAdm.cs",
               "RelativeToolTip": "MecanicaBastiao\\TelaListAdm.cs",
               "ViewState": "AgIAABkAAAAAAAAAAAA1wC4AAAAJAAAAAAAAAA==",
+=======
+              "DocumentIndex": 6,
+              "Title": "TelaCatalogo.cs",
+              "DocumentMoniker": "C:\\Users\\GUILHERMEALEXANDREFU\\Desktop\\MecanicaBastiao\\MecanicaBastiao\\MecanicaBastiao\\TelaCatalogo.cs",
+              "RelativeDocumentMoniker": "MecanicaBastiao\\TelaCatalogo.cs",
+              "ToolTip": "C:\\Users\\GUILHERMEALEXANDREFU\\Desktop\\MecanicaBastiao\\MecanicaBastiao\\MecanicaBastiao\\TelaCatalogo.cs",
+              "RelativeToolTip": "MecanicaBastiao\\TelaCatalogo.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAAowC0AAAAbAAAAAAAAAA==",
+>>>>>>> 2ff10cd4f46df6912d84c5d9341c9653d78e4d92
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-03-03T00:25:33.218Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
+<<<<<<< HEAD
               "DocumentIndex": 0,
               "Title": "TelaCatalogo.cs",
               "DocumentMoniker": "C:\\Users\\BRUNOISAACCORREASOAR\\Desktop\\MecanicaBastiao\\MecanicaBastiao\\MecanicaBastiao\\TelaCatalogo.cs",
@@ -63,6 +152,14 @@
               "ToolTip": "C:\\Users\\BRUNOISAACCORREASOAR\\Desktop\\MecanicaBastiao\\MecanicaBastiao\\MecanicaBastiao\\TelaCatalogo.cs",
               "RelativeToolTip": "MecanicaBastiao\\TelaCatalogo.cs",
               "ViewState": "AgIAAB8AAAAAAAAAAAAowDUAAAAAAAAAAAAAAA==",
+=======
+              "DocumentIndex": 4,
+              "Title": "TelaLoginUser.cs [Projeto]",
+              "DocumentMoniker": "C:\\Users\\GUILHERMEALEXANDREFU\\Desktop\\MecanicaBastiao\\MecanicaBastiao\\MecanicaBastiao\\TelaLoginUser.cs",
+              "RelativeDocumentMoniker": "MecanicaBastiao\\TelaLoginUser.cs",
+              "ToolTip": "C:\\Users\\GUILHERMEALEXANDREFU\\Desktop\\MecanicaBastiao\\MecanicaBastiao\\MecanicaBastiao\\TelaLoginUser.cs [Projeto]",
+              "RelativeToolTip": "MecanicaBastiao\\TelaLoginUser.cs [Projeto]",
+>>>>>>> 2ff10cd4f46df6912d84c5d9341c9653d78e4d92
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-03-03T00:25:26.791Z",
               "EditorCaption": ""
@@ -73,7 +170,11 @@
               "Title": "TelaCatalogo.cs [Projeto]",
               "DocumentMoniker": "C:\\Users\\BRUNOISAACCORREASOAR\\Desktop\\MecanicaBastiao\\MecanicaBastiao\\MecanicaBastiao\\TelaCatalogo.cs",
               "RelativeDocumentMoniker": "MecanicaBastiao\\TelaCatalogo.cs",
+<<<<<<< HEAD
               "ToolTip": "C:\\Users\\BRUNOISAACCORREASOAR\\Desktop\\MecanicaBastiao\\MecanicaBastiao\\MecanicaBastiao\\TelaCatalogo.cs [Projeto]",
+=======
+              "ToolTip": "C:\\Users\\GUILHERMEALEXANDREFU\\Desktop\\MecanicaBastiao\\MecanicaBastiao\\MecanicaBastiao\\TelaCatalogo.cs [Projeto]",
+>>>>>>> 2ff10cd4f46df6912d84c5d9341c9653d78e4d92
               "RelativeToolTip": "MecanicaBastiao\\TelaCatalogo.cs [Projeto]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-03-03T00:25:15.393Z"
