@@ -11,7 +11,7 @@ namespace MecanicaBastiao.Banco.Repositories
         {
             var usuarios = await conexaoBanco.CriarConexao()
                 .QueryAsync<Usuario>(
-@"
+@"e
 SELECT
     id,
     nome,

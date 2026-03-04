@@ -82,7 +82,8 @@ SELECT
     nome,
     descricao,
     preco,
-    quantidade
+    quantidade,
+categoria
 FROM itens
 WHERE id = @Id
 ",

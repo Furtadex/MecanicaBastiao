@@ -58,7 +58,7 @@ namespace MecanicaBastiao
             if (usuario != null)
             {
                 this.Hide();
-                TelaCatalogo tela = new TelaCatalogo();
+                TelaCatalogo tela = new TelaCatalogo(usuario );
                 tela.ShowDialog();
                 this.Close();
             }

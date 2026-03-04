@@ -14,9 +14,14 @@ namespace MecanicaBastiao
 {
     public partial class TelaCatalogo : Form
     {
-        public TelaCatalogo()
+        private Usuario usuario;
+
+        public TelaCatalogo(Usuario usuario)
         {
             InitializeComponent();
+
+            this.usuario = usuario;
+            label3.Text = usuario.Nome;
 
             Load += TelaCatalogo_Load;
 
@@ -56,6 +61,53 @@ namespace MecanicaBastiao
             var itens = await ItensRepositories.ObterTodos();
 
             dataGridView2.DataSource = new BindingList<Itens>(itens.ToList());
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            int idItem = (int)dataGridView2.SelectedRows[0].Cells[0].Value;
+
+            var aluguel = new Aluguel
+            {
+                IdUsuario = usuario.Id,
+                IdItem = idItem,
+                DataAluguel = DateTime.Now,
+                Ativo = 1,
+                DataDevolucao = CalcularDataDevolucao(
+                
+
+            };
+
+        }
+
+        public DateTime CalcularDataDevolucao(string categoria, DateTime dataAluguel)
+        {
+            int diasPrazo = 0;
+
+            switch (categoria.ToLower())
+            {
+                case "ouro":
+                    diasPrazo = 7;
+                    break;
+
+                case "prata":
+                    diasPrazo = 14;
+                    break;
+
+                case "bronze":
+                    diasPrazo = 21;
+                    break;
+
+                default:
+                    throw new Exception("Categoria inválida.");
+            }
+
+            return dataAluguel.AddDays(diasPrazo);
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
