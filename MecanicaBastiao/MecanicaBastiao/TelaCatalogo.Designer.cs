@@ -30,7 +30,6 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TelaCatalogo));
             panelCatalogo = new Panel();
-            button3 = new Button();
             button2 = new Button();
             button1 = new Button();
             label4 = new Label();
@@ -50,7 +49,6 @@
             // panelCatalogo
             // 
             panelCatalogo.BackColor = SystemColors.ButtonHighlight;
-            panelCatalogo.Controls.Add(button3);
             panelCatalogo.Controls.Add(button2);
             panelCatalogo.Controls.Add(button1);
             panelCatalogo.Controls.Add(label4);
@@ -64,22 +62,11 @@
             panelCatalogo.Size = new Size(588, 646);
             panelCatalogo.TabIndex = 0;
             // 
-            // button3
-            // 
-            button3.FlatStyle = FlatStyle.Flat;
-            button3.Image = (Image)resources.GetObject("button3.Image");
-            button3.Location = new Point(449, 593);
-            button3.Margin = new Padding(3, 2, 3, 2);
-            button3.Name = "button3";
-            button3.Size = new Size(118, 37);
-            button3.TabIndex = 8;
-            button3.UseVisualStyleBackColor = true;
-            // 
             // button2
             // 
             button2.FlatStyle = FlatStyle.Flat;
             button2.Image = (Image)resources.GetObject("button2.Image");
-            button2.Location = new Point(235, 593);
+            button2.Location = new Point(449, 593);
             button2.Margin = new Padding(3, 2, 3, 2);
             button2.Name = "button2";
             button2.Size = new Size(118, 37);
@@ -112,7 +99,7 @@
             // 
             dataGridView2.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridView2.Location = new Point(21, 163);
-            dataGridView2.Name = "dataGridView1";
+            dataGridView2.Name = "dataGridView2";
             dataGridView2.RowHeadersWidth = 51;
             dataGridView2.Size = new Size(546, 420);
             dataGridView2.TabIndex = 4;
@@ -206,6 +193,5 @@
         private Label label4;
         private Button button1;
         private Button button2;
-        private Button button3;
     }
 }

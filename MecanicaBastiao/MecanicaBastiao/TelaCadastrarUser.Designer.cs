@@ -204,6 +204,7 @@
             btnCadastrar.Size = new Size(522, 50);
             btnCadastrar.TabIndex = 11;
             btnCadastrar.UseVisualStyleBackColor = false;
+            btnCadastrar.Click += btnCadastrar_Click;
             // 
             // label1
             // 
@@ -267,6 +268,11 @@
             panelCadastro.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
+        }
+
+        private void BtnCadastrar_Click(object sender, EventArgs e)
+        {
+            throw new NotImplementedException();
         }
 
         #endregion
