@@ -47,7 +47,7 @@ VALUES
             item);
         }
 
-        public static async Task Atualizar(Itens item)
+        public static async Task Editar(Itens item)
         {
             await conexaoBanco.CriarConexao().ExecuteAsync(
 @"
@@ -91,5 +91,6 @@ WHERE id = @Id
 
             return item;
         }
+       
     }
 }

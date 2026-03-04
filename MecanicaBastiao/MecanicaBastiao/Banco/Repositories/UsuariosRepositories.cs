@@ -33,11 +33,11 @@ FROM usuarios
 INSERT INTO usuarios
 (
     Nome,
-    Senha
+    Senha,
     Email,
     Cpf,
     Telefone,
-    DataNascimento
+    data_nascimento
 )
 VALUES
 (
@@ -121,10 +121,6 @@ AND senha = @Senha
 
             return usuario;
         }
-
-
-
-
-
+        
     }
 }

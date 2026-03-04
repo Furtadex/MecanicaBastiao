@@ -85,7 +85,7 @@ namespace MecanicaBastiao
             {
                 var itemSelecionado = (Itens)dataGridView1.CurrentRow.DataBoundItem;
 
-                var telaEdit = new TelaCadastrarItens(itemSelecionado);
+                var telaEdit = new TelaEditar(itemSelecionado);
                 if (telaEdit.ShowDialog() == DialogResult.OK)
                 {
                     await AtualizarTabela();

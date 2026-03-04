@@ -72,8 +72,7 @@ namespace MecanicaBastiao
                 IdUsuario = usuario.Id,
                 IdItem = idItem,
                 DataAluguel = DateTime.Now,
-                Ativo = 1,
-                DataDevolucao = CalcularDataDevolucao(
+                Ativo = 1
                 
 
             };

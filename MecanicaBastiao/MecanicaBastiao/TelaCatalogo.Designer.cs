@@ -30,7 +30,6 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TelaCatalogo));
             panelCatalogo = new Panel();
-            button3 = new Button();
             button2 = new Button();
             button1 = new Button();
             label4 = new Label();
@@ -50,7 +49,6 @@
             // panelCatalogo
             // 
             panelCatalogo.BackColor = SystemColors.ButtonHighlight;
-            panelCatalogo.Controls.Add(button3);
             panelCatalogo.Controls.Add(button2);
             panelCatalogo.Controls.Add(button1);
             panelCatalogo.Controls.Add(label4);
