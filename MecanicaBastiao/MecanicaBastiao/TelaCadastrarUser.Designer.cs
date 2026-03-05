@@ -286,6 +286,17 @@
 
         #endregion
 
+        
+        protected void FillContent(Usuario usuario)
+        {
+            txtCPF.Text = usuario.Cpf;
+            txtEmail.Text = usuario.Email;
+            txtNome.Text = usuario.Nome;
+            //txtSenha.Text = usuario.Senha;
+            txtTelefone.Text = usuario.Telefone;
+        }
+
+
         private Panel panelCadastro;
         private Button button1;
         private Label label7;
