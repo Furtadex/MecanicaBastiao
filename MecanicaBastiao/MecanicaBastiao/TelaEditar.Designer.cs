@@ -258,6 +258,25 @@
 
         #endregion
 
+
+       protected void FillContent(Itens item)
+       {
+           txtNome.Text = item.Nome;
+           txtPreco.Text = item.Preco.ToString();
+           textBox2.Text = item.Descricao;
+           textBox3.Text = item.Categoria;
+           if(item.Disponivel == true)
+           {
+               radioButton2.Checked = true;
+               radioButton1.Checked = false;
+           }
+           else
+           {
+               radioButton2.Checked = false;
+               radioButton1.Checked = true;
+           }
+       }
+
         private Panel panelCadastro;
         private PictureBox pictureBox1;
         private Button button1;

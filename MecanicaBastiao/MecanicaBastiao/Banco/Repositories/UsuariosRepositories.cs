@@ -121,6 +121,27 @@ AND senha = @Senha
 
             return usuario;
         }
+
         
+                public static async Task<IEnumerable<Usuario>> ObterPorNome(string filtro)
+        {
+            var usuarios = await conexaoBanco.CriarConexao()
+                .QueryAsync<Usuario>(
+@"
+SELECT
+    id,
+    nome,
+    senha,
+    email,
+    cpf,
+    telefone,
+    data_nascimento
+FROM usuarios
+WHERE nome LIKE '%' + @Filter + '%'
+",
+                new { Filter = filtro });
+
+            return usuarios;
+        }
     }
 }

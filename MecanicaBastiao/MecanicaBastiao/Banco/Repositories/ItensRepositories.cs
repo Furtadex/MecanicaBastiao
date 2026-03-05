@@ -92,5 +92,25 @@ WHERE id = @Id
             return item;
         }
        
+       
+        public static async Task<IEnumerable<Itens>> ObterPorNome(string filtro)
+        {
+            var itens = await conexaoBanco.CriarConexao()
+                .QueryAsync<Itens>(
+@"
+SELECT
+    id,
+    nome,
+    descricao,
+    preco,
+    categoria
+FROM itens
+WHERE nome LIKE '%' + @Filter + '%'
+",
+                new { Filter = filtro });
+
+            return itens;
+        }
+
     }
 }

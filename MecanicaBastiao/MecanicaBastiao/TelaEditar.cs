@@ -16,6 +16,7 @@ namespace MecanicaBastiao
         public TelaEditar(Itens itens)
         {
             InitializeComponent();
+            FillContent(itens);
         }
     }
 }

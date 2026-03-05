@@ -13,9 +13,10 @@ namespace MecanicaBastiao
 {
     public partial class TelaCadastrarUser : Form
     {
-        public TelaCadastrarUser(TelaListAdm telaListAdm)
+        public TelaCadastrarUser(TelaListAdm telaListAdm, Usuario usuario)
         {
             InitializeComponent();
+            if (telaListAdm != null) FillContent(usuario);
         }
 
         private async void btnCadastrar_Click(object sender, EventArgs e)

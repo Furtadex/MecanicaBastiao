@@ -38,39 +38,43 @@ namespace MecanicaBastiao
 
             panelCatAdm.Region = new Region(path);
 
-            await AtualizarTabela();
+            await AtualizarTabela(null);
         }
 
-        public async Task AtualizarTabela()
+        public async Task AtualizarTabela(string filter)
         {
             if (entidadeAtual == "Itens")
             {
-                var itens = await ItensRepositories.ObterTodos();
+                var itens = string.IsNullOrWhiteSpace(filter)
+                            ? await ItensRepositories.ObterTodos()
+                            : await ItensRepositories.ObterPorNome(filter);
                 dataGridView1.DataSource = new BindingList<Itens>(itens.ToList());
             }
             else if (entidadeAtual == "Usuario")
             {
-                var usuarios = await UsuariosRepository.ObterTodos();
+                var usuarios = string.IsNullOrWhiteSpace(filter)
+                                ? await UsuariosRepository.ObterTodos()
+                                : await UsuariosRepository.ObterPorNome(filter);
                 dataGridView1.DataSource = new BindingList<Usuario>(usuarios.ToList());
             }
         }
 
         private void btnNovo_Click(object sender, EventArgs e)
         {
-            var cadastrarUser = new TelaCadastrarUser(this);
+            var cadastrarUser = new TelaCadastrarUser(this, null);
             cadastrarUser.Show();
         }
 
         private async void btnUsuarios_Click(object sender, EventArgs e)
         {
             entidadeAtual = "Usuario";
-            await AtualizarTabela();
+            await AtualizarTabela(null);
         }
 
         private async void btnCatalogo_Click(object sender, EventArgs e)
         {
             entidadeAtual = "Itens";
-            await AtualizarTabela();
+            await AtualizarTabela(null);
         }
 
         private async void btnEditar_Click(object sender, EventArgs e)
@@ -88,17 +92,17 @@ namespace MecanicaBastiao
                 var telaEdit = new TelaEditar(itemSelecionado);
                 if (telaEdit.ShowDialog() == DialogResult.OK)
                 {
-                    await AtualizarTabela();
+                    await AtualizarTabela(null);
                 }
             }
             else if (entidadeAtual == "Usuario")
             {
                 var usuarioSelecionado = (Usuario)dataGridView1.CurrentRow.DataBoundItem;
 
-                var telaEdit = new TelaCadastrarUser(this);
+                var telaEdit = new TelaCadastrarUser(this, usuarioSelecionado);
                 if (telaEdit.ShowDialog() == DialogResult.OK)
                 {
-                    await AtualizarTabela();
+                    await AtualizarTabela(null);
                 }
             }
 
@@ -133,7 +137,7 @@ namespace MecanicaBastiao
                         await UsuariosRepository.Deletar(usuario.Id);
                     }
 
-                    await AtualizarTabela();
+                    await AtualizarTabela(null);
                     MessageBox.Show("Registro excluído com sucesso!");
                 }
                 catch (Exception ex)
@@ -141,6 +145,12 @@ namespace MecanicaBastiao
                     MessageBox.Show($"Erro ao excluir: {ex.Message}", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+            var textBox = (TextBox)sender;
+            AtualizarTabela(textBox.Text);
         }
     }
 }
