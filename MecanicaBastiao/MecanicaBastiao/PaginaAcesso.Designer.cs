@@ -53,7 +53,7 @@
             // 
             pictureBox1.AccessibleRole = AccessibleRole.ScrollBar;
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(541, -26);
+            pictureBox1.Location = new Point(517, -26);
             pictureBox1.Margin = new Padding(3, 4, 3, 4);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(300, 371);
@@ -71,7 +71,7 @@
             panel1.Controls.Add(btn_EntrarU);
             panel1.Controls.Add(btn_EntrarA);
             panel1.Controls.Add(label2);
-            panel1.Location = new Point(446, 240);
+            panel1.Location = new Point(427, 240);
             panel1.Margin = new Padding(3, 4, 3, 4);
             panel1.Name = "panel1";
             panel1.Size = new Size(480, 520);
@@ -80,7 +80,7 @@
             // pictureBox2
             // 
             pictureBox2.BackgroundImage = (Image)resources.GetObject("pictureBox2.BackgroundImage");
-            pictureBox2.Location = new Point(53, 432);
+            pictureBox2.Location = new Point(24, 431);
             pictureBox2.Margin = new Padding(3, 4, 3, 4);
             pictureBox2.Name = "pictureBox2";
             pictureBox2.Size = new Size(30, 27);
@@ -91,7 +91,7 @@
             // 
             label7.AutoSize = true;
             label7.ForeColor = SystemColors.GrayText;
-            label7.Location = new Point(50, 387);
+            label7.Location = new Point(40, 387);
             label7.Name = "label7";
             label7.Size = new Size(399, 20);
             label7.TabIndex = 8;
@@ -103,7 +103,7 @@
             label4.BackColor = SystemColors.ButtonHighlight;
             label4.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label4.ForeColor = SystemColors.GrayText;
-            label4.Location = new Point(79, 427);
+            label4.Location = new Point(48, 427);
             label4.Name = "label4";
             label4.Size = new Size(396, 28);
             label4.TabIndex = 7;
@@ -160,7 +160,7 @@
             label5.AutoSize = true;
             label5.Font = new Font("Segoe UI", 10F);
             label5.ForeColor = SystemColors.GrayText;
-            label5.Location = new Point(485, 796);
+            label5.Location = new Point(450, 796);
             label5.Name = "label5";
             label5.Size = new Size(433, 23);
             label5.TabIndex = 5;
@@ -170,7 +170,7 @@
             // 
             label6.AutoSize = true;
             label6.ForeColor = SystemColors.GrayText;
-            label6.Location = new Point(566, 825);
+            label6.Location = new Point(526, 825);
             label6.Name = "label6";
             label6.Size = new Size(281, 20);
             label6.TabIndex = 6;
@@ -185,7 +185,7 @@
             // pictureBox3
             // 
             pictureBox3.BackgroundImage = (Image)resources.GetObject("pictureBox3.BackgroundImage");
-            pictureBox3.Location = new Point(545, 823);
+            pictureBox3.Location = new Point(505, 823);
             pictureBox3.Margin = new Padding(3, 4, 3, 4);
             pictureBox3.Name = "pictureBox3";
             pictureBox3.Size = new Size(26, 25);

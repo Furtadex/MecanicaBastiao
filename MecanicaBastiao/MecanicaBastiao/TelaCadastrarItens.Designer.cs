@@ -95,7 +95,7 @@ namespace MecanicaBastiao
             pictureBox1.Location = new Point(39, 29);
             pictureBox1.Margin = new Padding(3, 4, 3, 4);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(57, 63);
+            pictureBox1.Size = new Size(50, 50);
             pictureBox1.TabIndex = 12;
             pictureBox1.TabStop = false;
             // 
